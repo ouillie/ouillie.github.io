@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Inter';
+  src:  url('/inter-regular.woff2') format('woff2');
+}
+html {
+  font-family: Inter;
+}
+
+header {
+  padding: 20px;
+}
+.header-title {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  line-height: 1;
+  color: #2a2f36;
+}
+.header-title: hover {
+  color: #0c5df2;
+}
+.header-tagline {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #6c7a89;
+}
+.page, .page-content {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 40px;
+  }
+  .header-title {
+    font-size: 35px;
+  }
+  .header-tagline {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    padding: 0;
+  }
+  .main-content {
+    margin-left: 30%;
+    padding: 32px;
+  }
+  .header-content {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 40px 135px;
+  }
+  .page {
+    padding-left: 30%;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .header-content {
+    padding: 60px 60px 145px;
+  }
+  .header-title {
+    font-size: 45px;
+  }
+  .header-tagline {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
